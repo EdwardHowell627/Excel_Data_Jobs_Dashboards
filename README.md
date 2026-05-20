@@ -33,7 +33,7 @@ The dataset was imported from teh CSV files via power query. In the process the 
 - Unused columns were deleted.
 - The skills_job_dim and skills_dim tables and the job_postings_fact and company_dim tables were merged.
 - Columns were cleaned such as removing "via" from the platform column.
-- The state was extracted from row which had state data.
+- The state was extracted from the rows which had state data.
 - The dataset was filtered to remove rows with missing values in the salary column.
 
 ![Screenshot of Data Model](assets/DataModel.png)
