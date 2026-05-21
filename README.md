@@ -53,4 +53,11 @@ All three of these goals were accomplished using pivot tables. I started by crea
 
 # Postings Breakdown
 
+The Postings Breakdown dashboard was done is a very similar way except that because it involves data from both the job postings and the skills, I utilized a power pivot table which is able to leverage the relationship between Job_ID in the data model. This allows me to create a pivot table accross data tables such as calculating the average salary per skill. However, the data model relationship direction does not go in the direction to allow this calculation so a `CROSSFILTER()` measure was used to force this calculation. The DAX code comes out to:
+
+`=CALCULATE(AVERAGE(job_postings_fact[salary_year_avg]),CROSSFILTER(job_postings_fact[job_id],skills_job_dim[job_id],Both))`
+
+![Screenshot of Measure](assets/Measure.png)
+
+
 # Conclusion and Takeaways
