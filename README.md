@@ -43,13 +43,11 @@ The connections were then loaded to the data model and a relationship was create
 # Salary Calculator
 
 Both of the dashboards can be broken down into three major parts
-- The graphs
+- The charts
 - The slicers
 - The KPI (key performance indicator) cards
 
-All three of these goals were accomplished using pivot tables. I started by creating a simple pivot table for each of the wanted graphs, then I added a chart for each of them on a different slide dedicated to the dashboard. Next, I created slicers customized to report their connections to each of the pivot tables and to hide options for which there are no values. Lastly, using the `GETPIVOTDATA()` formula I extracted the total row values from the pivot tables which are then displayed prominantly on the dashboard using text boxes.
-
-![Screenshot of Slicerl](assets/Slicer.png)
+All three of these goals were accomplished using pivot tables. I started by creating a simple pivot table for each of the charts. Next I inserted a chart with various visual customizations for each of the pivot tabels on a different dashboard sheet. Next, I created slicers customized to report their connections to each of the pivot tables and to hide options for which there are no values. Lastly, using the `GETPIVOTDATA()` formula I extracted the total row values from the pivot tables which are then displayed prominantly on the dashboard using text boxes.
 
 ![Screenshot of Pivot Table](assets/PivotTable.png)
 
