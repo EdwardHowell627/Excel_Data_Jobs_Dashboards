@@ -18,7 +18,7 @@ To make the excel file function on your computer you will need to update the fil
 ![Visual of the tables in the dataset](assets/ERD_postgreSQL.png)
 *The dataset is sourced from [Luke Barousse](https://drive.google.com/drive/folders/1egWenKd_r3LRpdCf4SsqTeFZ1ZdY3DNx).
 
-The database, as visualized above, contains 4 tables. The largest table, job_postings_fact, contains the key details about each recorded job posting. It stores each posting with data such as the location of the job, whether it is a work-from-home job, the average salary, the company offering the job, and any skills needed for the job. 
+The database, as visualized above, contains 4 tables. The largest table, job_postings_fact, contains the key details about each recorded job posting. It stores each posting with data such as the location of the job, whether it is a work-from-home job, the average salary, the company offering the job, and any skills needed for the job. Because the original file was above the GitHub size limit under dataset, I have uploaded a filtered version containing only rows with salary data.
 
 The company_dim table stores the companies offering each job, providing details like the company name and a link to them on Google.
 
@@ -31,8 +31,8 @@ The skills_dim table stores the skills, providing details like the name of the s
 The dataset was imported from teh CSV files via power query. In the process the dataset was cleaned and transformed in a variety ways. The key changes were:
 
 - Unused columns were deleted.
-- The skills_job_dim and skills_dim tables and the job_postings_fact and company_dim tables were merged.
-- Columns were cleaned such as removing "via" from the platform column.
+- The skills_job_dim and skills_dim tables, and the job_postings_fact and company_dim tables were merged.
+- Some data was cleaned such as removing "via" from the platform column.
 - The state was extracted from the rows which had state data.
 - The dataset was filtered to remove rows with missing values in the salary column.
 
@@ -40,8 +40,19 @@ The dataset was imported from teh CSV files via power query. In the process the 
 
 The connections were then loaded to the data model and a relationship was created on the job_id column.
 
-# Dashboard 1
+# Salary Calculator
 
-# Dashboard 2
+Both of the dashboards can be broken down into three major parts
+- The graphs
+- The slicers
+- The KPI (key performance indicator) cards
 
+All three of these goals were accomplished using pivot tables. I started by creating a simple pivot table for each of the wanted graphs, then I added a chart for each of them on a different slide dedicated to the dashboard. Next, I created slicers customized to report their connections to each of the pivot tables and to hide options for which there are no values. Lastly, using the `GETPIVOTDATA()` formula I extracted the total row values from the pivot tables which are then displayed prominantly on the dashboard using text boxes.
 
+![Screenshot of Slicerl](assets/Slicer.png)
+
+![Screenshot of Pivot Table](assets/PivotTable.png)
+
+# Postings Breakdown
+
+# Conclusion and Takeaways
