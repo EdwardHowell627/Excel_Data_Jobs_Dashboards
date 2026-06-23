@@ -73,7 +73,7 @@ The Postings Breakdown dashboard was done in a very similar way, except that bec
 
 # Conclusion
 
-I hope that this tool can help others understand the job market of data-related jobs as applied to them, similar to the conclusion I made in the SQL project analyzing the same dataset more in-depth. With these dashboards a user should be able to analyze:
+I hope that this tool can help others understand the job market of data-related jobs as applied to them, similar to the conclusions I made for myself in the SQL project analyzing the same dataset more in-depth. With these dashboards a user should be able to analyze:
 
 - How different factors like whether a job is work from home, the title of the job, and skill requirements impact the average salary of a job posting.
 - Which skills should be focused on by salary and frequency for the job market for a specific job title within a state.
