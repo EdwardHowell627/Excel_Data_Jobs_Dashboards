@@ -2,8 +2,14 @@
 
 This is the second of four projects meant to showcase my knowledge of GitHub and various data science tools, such as Excel. For this project I worked with a dataset documenting over 1,000,000 online data job postings (data scientist, data engineer, etc.). Since my SQL analysis of this same dataset focused more on the analysis process, I wanted the Excel portion to focus on visualizing the data and making it interactable. I have created two dashboards meant to help the user understand the dataset with visualizations and key takeaways highlighted. Below you can see screenshots of the two dashboards. At the bottom of the README there is also a gif of each showcasing them being used.
 
-![Screenshot of dashboard 1](assets/Dashboard1.png)
-![Screenshot of dashboard 2](assets/Dashboard2.png)
+<p align="center">
+  <img src="assets/Dashboard1.png" width="800">
+</p>
+
+<p align="center">
+  <img src="assets/Dashboard2.png" width="800">
+</p>
+
 
 # Tools Used
 
@@ -26,7 +32,10 @@ To make the excel file function on your computer, you will need to update the fi
 4. Open the Get Data dropdown (far left on the ribbon) and click Data Source Settings.
 5. Go through each of the four listed data sources and click the "Change Source" option in the bottom left, updating the source files to where they are locally stored on your computer (make sure you select the correct csv file).
 
-![Visual of the tables in the dataset](assets/ERD_postgreSQL.png)
+<p align="center">
+  <img src="assets/ERD_postgreSQL.png" width="800">
+</p>
+
 *The dataset is sourced from [Luke Barousse](https://drive.google.com/drive/folders/1egWenKd_r3LRpdCf4SsqTeFZ1ZdY3DNx).
 
 The database, as visualized above, contains 4 tables. The largest table, _job_postings_fact_, contains the key details about each recorded job posting. It stores each posting with data such as the location of the job, whether it is a work-from-home job, the average salary, the company offering the job, and any skills needed for the job. Because the original file was above the GitHub size limit under dataset, I have uploaded a filtered version containing only rows with salary data.
@@ -37,7 +46,9 @@ The _skills_job_dim_ table is an intersection table meant to store which skills 
 
 The _skills_dim_ table stores the skills, providing details like the name of the skill and what type it is, such as “programming” or "analyst_tools." 
 
-![Screenshot of Power Query Editor](assets/PowerQuery.png)
+<p align="center">
+  <img src="assets/PowerQuery.png" width="800">
+</p>
 
 The dataset was imported from teh CSV files via power query. In the process the dataset was cleaned and transformed in a variety ways. The key changes were:
 
@@ -47,7 +58,9 @@ The dataset was imported from teh CSV files via power query. In the process the 
 - The state was extracted from the rows which had state data.
 - The dataset was filtered to remove rows with missing values in the salary column.
 
-![Screenshot of Data Model](assets/DataModel.png)
+<p align="center">
+  <img src="assets/DataModel.png" width="500">
+</p>
 
 The connections were then loaded to the data model and a relationship was created on the job_id column.
 
@@ -60,7 +73,9 @@ Both of the dashboards can be broken down into three major parts
 
 All three of these goals were accomplished using pivot tables. I started by creating a simple pivot table for each of the charts. Next, I inserted a chart with various visual customizations for each of the pivot tables on a different dashboard sheet. Next, I created slicers customized to report their connections to each of the pivot tables and to hide options for which there are no values. Lastly, using the `GETPIVOTDATA()` formula, I extracted the total row values from the pivot tables, which are then displayed prominently on the dashboard using text boxes.
 
-![Screenshot of Pivot Table](assets/PivotTable.png)
+<p align="center">
+  <img src="assets/PivotTable.png" width="700">
+</p>
 
 # Postings Breakdown
 
@@ -68,7 +83,9 @@ The Postings Breakdown dashboard was done in a very similar way, except that bec
 
 `=CALCULATE(AVERAGE(job_postings_fact[salary_year_avg]),CROSSFILTER(job_postings_fact[job_id],skills_job_dim[job_id],Both))`
 
-![Screenshot of Measure](assets/Measure.png)
+<p align="center">
+  <img src="assets/Measure.png" width="700">
+</p>
 
 
 # Conclusion
@@ -82,5 +99,11 @@ I hope that this tool can help others understand the job market of data-related 
 
 # Showcase
 
-![Gif of Salary Calculator](assets/Calculator.gif)
-![Gif of Salary Calculator](assets/Breakdown.gif)
+<p align="center">
+  <img src="assets/Calculator.gif" width="800">
+</p>
+
+<p align="center">
+  <img src="assets/Breakdown.gif" width="800">
+</p>
+
