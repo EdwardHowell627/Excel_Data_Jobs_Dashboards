@@ -69,7 +69,7 @@ The connections were then loaded to the data model and a relationship was create
 Both of the dashboards can be broken down into three major parts
 - The charts
 - The slicers
-- The KPI (key performance indicator) cards
+- The value cards
 
 All three of these goals were accomplished using pivot tables. I started by creating a simple pivot table for each of the charts. Next, I inserted a chart with various visual customizations for each of the pivot tables on a different dashboard sheet. Next, I created slicers customized to report their connections to each of the pivot tables and to hide options for which there are no values. Lastly, using the `GETPIVOTDATA()` formula, I extracted the total row values from the pivot tables, which are then displayed prominently on the dashboard using text boxes.
 
