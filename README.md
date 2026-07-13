@@ -3,11 +3,11 @@
 This is the second of four projects meant to showcase my knowledge of GitHub and various data science tools, such as Excel. For this project I worked with a dataset documenting over 1,000,000 online data job postings (data scientist, data engineer, etc.). Since my SQL analysis of this same dataset focused more on the analysis process, I wanted the Excel portion to focus on visualizing the data and making it interactable. I have created two dashboards meant to help the user understand the dataset with visualizations and key takeaways highlighted. Below you can see screenshots of the two dashboards. At the bottom of the README there is also a gif of each showcasing them being used.
 
 <p align="center">
-  <img src="assets/Dashboard1.png" width="800">
+  <img src="assets/salary_dashboard.png" width="800">
 </p>
 
 <p align="center">
-  <img src="assets/Dashboard2.png" width="800">
+  <img src="assets/postings_dashboard.png" width="800">
 </p>
 
 
@@ -47,7 +47,7 @@ The _skills_job_dim_ table is an intersection table meant to store which skills 
 The _skills_dim_ table stores the skills, providing details like the name of the skill and what type it is, such as “programming” or "analyst_tools." 
 
 <p align="center">
-  <img src="assets/PowerQuery.png" width="800">
+  <img src="assets/power_query.png" width="800">
 </p>
 
 The dataset was imported from teh CSV files via power query. In the process the dataset was cleaned and transformed in a variety ways. The key changes were:
@@ -59,7 +59,7 @@ The dataset was imported from teh CSV files via power query. In the process the 
 - The dataset was filtered to remove rows with missing values in the salary column.
 
 <p align="center">
-  <img src="assets/DataModel.png" width="500">
+  <img src="assets/data_model.png" width="500">
 </p>
 
 The connections were then loaded to the data model and a relationship was created on the job_id column.
@@ -74,7 +74,7 @@ Both of the dashboards can be broken down into three major parts
 All three of these goals were accomplished using pivot tables. I started by creating a simple pivot table for each of the charts. Next, I inserted a chart with various visual customizations for each of the pivot tables on a different dashboard sheet. Next, I created slicers customized to report their connections to each of the pivot tables and to hide options for which there are no values. Lastly, using the `GETPIVOTDATA()` formula, I extracted the total row values from the pivot tables, which are then displayed prominently on the dashboard using text boxes.
 
 <p align="center">
-  <img src="assets/PivotTable.png" width="700">
+  <img src="assets/pivot_table.png" width="700">
 </p>
 
 # Postings Breakdown
@@ -84,7 +84,7 @@ The Postings Breakdown dashboard was done in a very similar way, except that bec
 `=CALCULATE(AVERAGE(job_postings_fact[salary_year_avg]),CROSSFILTER(job_postings_fact[job_id],skills_job_dim[job_id],Both))`
 
 <p align="center">
-  <img src="assets/Measure.png" width="700">
+  <img src="assets/measure.png" width="700">
 </p>
 
 
@@ -100,10 +100,10 @@ I hope that this tool can help others understand the job market of data-related 
 # Showcase
 
 <p align="center">
-  <img src="assets/Calculator.gif" width="800">
+  <img src="assets/salary_calculator.gif" width="800">
 </p>
 
 <p align="center">
-  <img src="assets/Breakdown.gif" width="800">
+  <img src="assets/postings_breakdown.gif" width="800">
 </p>
 
