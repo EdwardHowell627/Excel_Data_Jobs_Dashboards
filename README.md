@@ -24,7 +24,7 @@ This is the second of four projects meant to showcase my knowledge of GitHub and
 
 # Dataset
 
-To make the excel file function on your computer, you will need to update the file paths for dataset files. Follow these steps: 
+To make the excel file function on your computer, you may need to update the file paths for dataset files. Follow these steps: 
 
 1. Download the data_jobs_project.xlsx file and all four csv files from the dataset folder.
 2. Open the excel file.
