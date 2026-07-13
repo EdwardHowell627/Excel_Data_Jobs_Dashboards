@@ -24,10 +24,10 @@ This is the second of four projects meant to showcase my knowledge of GitHub and
 
 # Dataset
 
-To make the excel file function on your computer, you may need to update the file paths for dataset files. Follow these steps: 
+To make the Excel file function on your computer, you may need to update the file paths for dataset files. Follow these steps: 
 
 1. Download the data_jobs_project.xlsx file and all four csv files from the dataset folder.
-2. Open the excel file.
+2. Open the Excel file.
 3. Select the Data tab at the top of the sheet.
 4. Open the Get Data dropdown (far left on the ribbon) and click Data Source Settings.
 5. Go through each of the four listed data sources and click the "Change Source" option in the bottom left, updating the source files to where they are locally stored on your computer (make sure you select the correct csv file).
