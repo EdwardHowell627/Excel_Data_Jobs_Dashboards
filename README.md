@@ -16,7 +16,7 @@ This is the second of four projects meant to showcase my knowledge of GitHub and
 - **Excel**
   - **Power Query**: Used to load and transform the dataset.
   - **Data Model**: Used to create relations between tables.
-  - **DAX**: Used to create a measure for the data model.
+  - **DAX**: Used to create measures to further analyze the data model.
   - **Pivot Tables**: Used to analyze the dataset.
   - **Charts**: Used to visualize the results.
   - **Slicers**: Used to allow user interaction with the dashboards.
