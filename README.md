@@ -50,7 +50,7 @@ The _skills_dim_ table stores the skills, providing details like the name of the
   <img src="assets/power_query.png" width="800">
 </p>
 
-The dataset was imported from teh CSV files via power query. In the process the dataset was cleaned and transformed in a variety ways. The key changes were:
+The dataset was imported from the CSV files via power query. In the process the dataset was cleaned and transformed in a variety ways. The key changes were:
 
 - Unused columns were deleted.
 - The _skills_job_dim_ and _skills_dim_ tables, and the _job_postings_fact_ and _company_dim_ tables were merged.
