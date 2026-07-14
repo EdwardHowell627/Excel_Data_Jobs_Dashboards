@@ -66,6 +66,10 @@ The connections were then loaded to the data model and a relationship was create
 
 # Salary Calculator
 
+<p align="center">
+  <img src="assets/salary_dashboard.png" width="800">
+</p>
+
 Both of the dashboards can be broken down into three major parts
 - The charts
 - The slicers
@@ -78,6 +82,10 @@ All three of these goals were accomplished using pivot tables. I started by crea
 </p>
 
 # Postings Breakdown
+
+<p align="center">
+  <img src="assets/postings_dashboard.png" width="800">
+</p>
 
 The Postings Breakdown dashboard was done in a very similar way, except that because it involves data from both the job postings and the skills, I utilized a power pivot table, which is able to leverage the relationship between job_id in the data model. This allows me to create a pivot table across data tables such as calculating the average salary per skill. However, the data model relationship direction does not go in the direction to allow this calculation, so a `CROSSFILTER()` measure was used to force this calculation. The DAX code comes out to:
 
