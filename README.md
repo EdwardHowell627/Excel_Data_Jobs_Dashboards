@@ -38,7 +38,7 @@ To make the Excel file function on your computer, you may need to update the fil
 
 *The dataset is sourced from [Luke Barousse](https://drive.google.com/drive/folders/1egWenKd_r3LRpdCf4SsqTeFZ1ZdY3DNx).*
 
-The database, as visualized above, contains 4 tables. The largest table, _job_postings_fact_, contains the key details about each recorded job posting. It stores each posting with data such as the location of the job, whether it is a work-from-home job, the average salary, the company offering the job, and any skills needed for the job. Because the original file was above the GitHub size limit under dataset, I have uploaded a filtered version containing only rows with salary data.
+The dataset, as visualized above, contains 4 tables. The largest table, _job_postings_fact_, contains the key details about each recorded job posting. It stores each posting with data such as the location of the job, whether it is a work-from-home job, the average salary, the company offering the job, and any skills needed for the job. Because the original file was above the GitHub size limit under dataset, I have uploaded a filtered version containing only rows with salary data.
 
 The _company_dim_ table stores the companies offering each job, providing details like the company name and a link to them on Google.
 
