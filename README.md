@@ -1,15 +1,16 @@
 # Introduction
 
-Welcome to my portfolio project on Excel. This project is the second of four projects meant to showcase my knowledge of the most common and important tools in data science. For this project, I worked with a relational database documenting over 1,000,000 online job postings in various data-related fields such as data science and data engineering. Since my SQL analysis of the same dataset focused on the querying and analysis process, I wanted the Excel project to focus on visualizing the data and making it interactable. I have created two dashboards meant to help the user understand the dataset with visualizations and key takeaways highlighted, so hopefully they can walk away with some of the same understandings that I came to in the SQL project as applied to them. Below are screenshots of the dashboards. At the bottom of the README are GIFs showcasing both dashboards being used.
+Welcome to my portfolio project on Excel. This project is the second of four projects meant to showcase my knowledge of the most common and important tools in data science. For this project, I worked with a relational database documenting over 1,000,000 online job postings in various data-related fields such as data science and data engineering. Since my SQL analysis of the same dataset focused on the querying and analysis process, I wanted the Excel project to focus on visualizing the data and making it interactable. I have created two dashboards meant to help the user understand the dataset with visualizations and key takeaways highlighted, so hopefully they can walk away with some of the same understandings that I came to in the SQL project as applied to them.
+
+# Showcase
 
 <p align="center">
-  <img src="assets/salary_dashboard.png" width="800">
+  <img src="assets/salary_calculator.gif" width="800">
 </p>
 
 <p align="center">
-  <img src="assets/postings_dashboard.png" width="800">
+  <img src="assets/postings_breakdown.gif" width="800">
 </p>
-
 
 # Tools Used
 
@@ -103,14 +104,4 @@ I hope that this tool can help others understand the job market of data-related 
 - Which skills the user should focus on learning, based on the average salary and requirement frequency for jobs with their job title and within their state.
 - Which companies offer the most jobs for their job title within their state, and what platforms are those jobs posted on.
 
-
-# Showcase
-
-<p align="center">
-  <img src="assets/salary_calculator.gif" width="800">
-</p>
-
-<p align="center">
-  <img src="assets/postings_breakdown.gif" width="800">
-</p>
 
